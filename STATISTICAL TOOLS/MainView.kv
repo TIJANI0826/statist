@@ -1,0 +1,20 @@
+<HeaderLabel@ToggleButton>:
+    canvas.before:
+        Color:
+            rgb: self.bgcolor
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    markup:True
+    size_hint_y:None
+    height:40
+
+GridLayout:
+    cols:3
+    size_hint_y:None
+    HeaderLabel:
+        text:'column1'
+    HeaderLabel:
+        text:'column2'
+    HeaderLabel:
+        text:'column3'

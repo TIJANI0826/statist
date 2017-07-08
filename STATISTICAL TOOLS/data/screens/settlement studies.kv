@@ -1,0 +1,99 @@
+#: import Tables main.Tables
+#: import ListAdapter kivy.adapters.listadapter.ListAdapter
+#:import sla kivy.adapters.simplelistadapter
+#: import ListItemButton kivy.uix.listview.ListItemButton
+
+ShowcaseScreen:
+	name: 'SETTLEMENT STUDIES'
+	firstcol:col1
+	secondcol:col2
+	thirdcol:col3
+	ScrollView:
+	    size_hint_y: None
+	    height: '48dp'
+	    GridLayout:
+	        cols:4;
+	        rows:1
+	        ModalView:
+	            Label:
+	                text:'text'
+	        ModalView:
+	            Label:
+	                text:'button'
+	        ModalView:
+	            Label:
+	                text:'button'
+	        ModalView:
+	            Label:
+	                text:'button'
+
+    BoxLayout:
+        size_hint_y: None
+	    height: '48dp'
+        TextInput:
+            id:col1
+            hint_text:'COLUMN 1'
+            multiline:False
+        TextInput:
+            text:''
+            id:col2
+            hint_text:'COLUMN 2'
+            multiline:False
+        TextInput:
+            id:col3
+            hint_text:'COLUMN 3'
+            multiline:False
+    BoxLayout:
+        size_hint_y: None
+		height: '48dp'
+        Button:
+            text:'Add'
+            on_press: app.show_manview()
+        Button:
+            text:'delete'
+            on_press: app.del_col()
+
+        Button:
+            text:'replace'
+            on_press: app.replace_col()
+    BoxLayout:
+        size_hint_y: None
+		height: '48dp'
+		GridLayout:
+			size_hint_y: None
+			height: '48dp'
+			cols:2
+			rows:4
+			Button:
+				text:' Rank'
+				size_hint_y: None
+				height: '48dp'
+			Button:
+				text:'Fraction'
+				size_hint_y: None
+				height: '48dp'
+			Button:
+				text:'Predicted'
+				size_hint_y: None
+				height: '48dp'
+			Button:
+				text:'Analog'
+				size_hint_y: None
+				height: '48dp'
+			Button:
+				text:'PopLog'
+				size_hint_y: None
+				height: '48dp'
+			Button:
+				text:'Residual'
+				size_hint_y: None
+				height: '48dp'
+			Button:
+				text:' Settlement Index'
+				size_hint_y: None
+				height: '48dp'
+			Button:
+				text:'Sphere of Influence'
+				size_hint_y: None
+				height: '48dp'
+

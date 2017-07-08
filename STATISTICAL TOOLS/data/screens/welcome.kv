@@ -1,0 +1,145 @@
+ShowcaseScreen:
+    name: 'WELCOME'
+
+    fullscreen: True
+
+    BoxLayout:
+        size_hint_y: None
+        Label:
+            text:'STATISTICAL ANALYSIS'
+
+    Accordion:
+
+        orientation: 'vertical'
+
+        AccordionItem:
+            title: 'SETTLEMENT STUDIES'
+            BoxLayout:
+                orientation: 'vertical'
+                Button:
+                    text: 'Settlement studies'
+                    on_press:app.grrid()
+                    #text_size: self.width, None
+        AccordionItem:
+            title: 'POPULATION STUDIES'
+            size_hint_y: None
+            height: '48dp'
+            BoxLayout:
+                orientation: 'vertical'
+                Button:
+                    text: 'Population Projection'
+                    #text_size: self.width, None
+                    on_press:app.poop()
+                Button:
+                    text: 'Population Density'
+                    #text_size: self.width, None
+                    on_press:app.popden()
+                Button:
+                    text: 'Sex Ratio'
+                    #text_size: self.width, None
+                    on_press:app.sex_ratio()
+                Button:
+                    text: 'Dependency Ratio'
+                    #text_size: self.width, None
+                    on_press:app.depend_ratio()
+                Button:
+                    text: 'Young Dependency Rate'
+                    #text_size: self.width, None
+                    on_press:app.yong_dend_ratio()
+                Button:
+                    text: 'Old Dependency Rate '
+                    #text_size: self.width, None
+                    on_press:app.old_depend_ratio()
+                Button:
+                    text: 'Crude Death Rate'
+                    #text_size: self.width, None
+                    on_press:app.crud_det_ratio()
+                Button:
+                    text: 'Crude Birth Rate'
+                    #text_size: self.width, None
+                    on_press:app.crud_bet_ratio()
+                Button:
+                    text: 'Natural Increase'
+                    #text_size: self.width, None
+                    on_press:app.nat_increase()
+                Button:
+                    text: 'Fertility Rate'
+                    #text_size: self.width, None
+                    on_press:app.fat_rate()
+                Button:
+                    text: 'Ageing Index'
+                    #text_size: self.width, None
+                    on_press:app.age_index()
+        AccordionItem:
+            title: 'TRANSPORTATION STUDIES'
+            BoxLayout:
+                orientation: 'vertical'
+                Button:
+                    text: 'Cyclomatic Number'
+                    #text_size: self.width, None
+                    on_press:app.table_view()
+                Button:
+                    text: 'Alpha Index'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Beta Index'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Gamma Index'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Detour Index'
+                    #text_size: self.width, None
+        AccordionItem:
+            title: 'ROAD TRAFFIC ANALYSIS'
+            BoxLayout:
+                orientation: 'vertical'
+                Button:
+                    text: 'Accident Rate'
+                    #text_size: self.width, None
+                Button:
+                    text: 'RTA Death Rate'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Fatality Index'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Casuality index'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Injury Index'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Non-Survival Index'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Severity Index'
+                    #text_size: self.width, None
+                Button:
+                    text: 'Pedestrian Risk'
+                    #text_size: self.width, None
+        AccordionItem:
+            title: 'TRAFFIC ANALYSIS'
+            BoxLayout:
+                orientation: 'vertical'
+                Spinner:
+                    text: 'TRAFFIC VOLUME'
+                    values: ('AHF','ADF')
+                    size_hint_y: None
+                    height: '48dp'
+                Button:
+                    text: 'Accessibility'
+                    #text_size: self.width, None
+                    size_hint_y: None
+                    height: '48dp'
+                Button:
+                    text: 'Load Factor'
+                    #text_size: self.width, None
+                    size_hint_y: None
+                    height: '48dp'
+                Button:
+                    text: 'Traffic Volume'
+                    #text_size: self.width, None
+                    size_hint_y: None
+                    height: '48dp'
+
